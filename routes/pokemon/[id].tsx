@@ -3,7 +3,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { h, Fragment } from "preact";
 import { tw } from "@twind";
 
-import { DetailsProps } from "../../utils/types.ts";
+import { DetailsProps, Pokemon } from "../../utils/types.ts";
 import { DB, TOKEN } from "../../utils/env.ts";
 import Header from "../../src/Header.tsx";
 
@@ -20,7 +20,7 @@ export const handler: Handlers<DetailsProps> = {
 };
 
 export default function Details(props: PageProps<DetailsProps>) {
-  const {pokemon} = props.data;
+  const { pokemon } = props.data;
   return (
     <div class={tw`mx-auto max-w-screen-xl`}>
       <Header />

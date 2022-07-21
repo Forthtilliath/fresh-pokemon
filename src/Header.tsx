@@ -2,7 +2,7 @@
 import { h } from "preact";
 import { tw } from "@twind";
 
-// import HeaderCounter from "../islands/HeaderCounter.tsx";
+import HeaderCounter from "../islands/HeaderCounter.tsx";
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
         <h1 class={tw`text-4xl`}>Pokemon</h1>
       </a>
       <a href="/list">
-        {/* <HeaderCounter /> */}
+        <HeaderCounter />
       </a>
     </div>
   );

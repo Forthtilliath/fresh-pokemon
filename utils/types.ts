@@ -24,3 +24,7 @@ export type PokemonCardProps = {
 export type DetailsProps = {
   pokemon: Pokemon;
 };
+
+export type AddToListProps = {
+  pokemon: Pokemon;
+};

@@ -3,7 +3,7 @@ import { h } from "preact";
 import { tw } from "@twind";
 
 import { PokemonCardProps } from "../utils/types.ts";
-// import AddToList from "../islands/AddToList.tsx";
+import AddToList from "../islands/AddToList.tsx";
 
 export default function PokemonCard({ pokemon, allowAdd }: PokemonCardProps) {
   return (
@@ -16,7 +16,7 @@ export default function PokemonCard({ pokemon, allowAdd }: PokemonCardProps) {
         </a>
         {allowAdd && (
           <div class={tw`flex-end`}>
-            {/* <AddToList pokemon={pokemon} /> */}
+            <AddToList pokemon={pokemon} />
           </div>
         )}
       </div>
