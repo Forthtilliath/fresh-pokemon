@@ -1,3 +1,5 @@
+export type HandlerType = (req: Request, _ctx: HandlerContext)=> Promise<Response>;
+
 export type Pokemon = {
   id: string;
   name: string;
