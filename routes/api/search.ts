@@ -1,5 +1,5 @@
-import { HandlerContext } from "$fresh/server.ts";
 import { DB, TOKEN } from "../../utils/env.ts";
+import { HandlerType, Pokemon } from "../../utils/types.ts";
 
 export const handler: HandlerType = async (req, _ctx) => {
   const url = new URL(req.url);

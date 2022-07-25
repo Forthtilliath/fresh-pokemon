@@ -3,7 +3,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { h } from "preact";
 import { tw } from "@twind";
 
-import { Pokemons, HomeProps } from "../utils/types.ts";
+import { Pokemon, HomeProps } from "../utils/types.ts";
 import { DB, TOKEN } from "../utils/env.ts";
 import PokemonCard from "../src/PokemonCard.tsx";
 import Header from "../src/Header.tsx";
